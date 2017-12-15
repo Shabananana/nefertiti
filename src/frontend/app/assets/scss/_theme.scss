@@ -1,0 +1,62 @@
+@import 'variables';
+
+body {
+  color: $font-color;
+  font-family: $roboto-condensed;
+  background-color: $light-grey-1;
+  background-image: $asfalt-texture;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+.headline {
+  font-family: $bungee;
+}
+
+.logo {
+  font-family: $bungee;
+  font-size: 60px;
+}
+
+.pale-yellow {
+  color: $pale-yellow;
+}
+
+.deep-pink {
+  color: $deep-pink;
+}
+
+.lime-green {
+  color: $lime-green;
+}
+
+.dark-purple {
+  color: $dark-purple;
+}
+
+.dark-orange {
+  color: $dark-orange;
+}
+
+header, footer {
+  width: 100%;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
