@@ -1,0 +1,46 @@
+@import 'variables';
+
+.logo-shape {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-triangles, .bottom-triangles {
+  display: flex;
+}
+
+.triangle-one {
+  height: 0;
+  width: 0;
+  border-right: 75px solid transparent;
+  border-left: 75px solid transparent;
+  border-bottom: 100px solid #505050;
+}
+
+.triangle-two {
+  height: 0;
+  width: 0;
+  margin-left: -75px;
+  border-right: 75px solid transparent;
+  border-left: 75px solid transparent;
+  border-top: 100px solid #686868;
+}
+
+.triangle-three {
+  height: 0;
+  width: 0;
+  margin-left: -75px;
+  border-right: 75px solid transparent;
+  border-left: 75px solid transparent;
+  border-bottom: 100px solid #808080;
+}
+
+.triangle-four {
+  height: 0;
+  width: 0;
+  border-right: 150px solid transparent;
+  border-left: 150px solid transparent;
+  border-top: 150px solid #404040;
+}

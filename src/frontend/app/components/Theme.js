@@ -15,11 +15,23 @@ const Theme = () => {
     <div>
       <header>
         <div className="logo">
-          <span className="pale-yellow">N</span>
-          <span className="deep-pink">F</span>
-          <span className="lime-green">R</span>
-          <span className="dark-purple">T</span>
-          <span className="dark-orange">T</span>
+          <div className="logo-shape">
+            <div className="top-triangles">
+              <div className="triangle-one" />
+              <div className="triangle-two" />
+              <div className="triangle-three" />
+            </div>
+            <div className="bottom-triangles">
+              <div className="triangle-four" />
+            </div>
+          </div>
+          <div className="logo-copy">
+            <span className="pale-yellow char1">N</span>
+            <span className="deep-pink char2">F</span>
+            <span className="lime-green char3">R</span>
+            <span className="dark-purple char4">T</span>
+            <span className="dark-orange char5">T</span>
+          </div>
         </div>
         <nav className="navigation">
           <ul>

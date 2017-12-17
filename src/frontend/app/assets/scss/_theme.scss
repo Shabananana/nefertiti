@@ -30,6 +30,13 @@ h4 {
 .logo {
   font-family: $bungee;
   font-size: 60px;
+  position: relative;
+  width: 400px;
+  margin: 15px auto;
+}
+
+.logo-copy {
+  text-align: center;
 }
 
 .pale-yellow {
