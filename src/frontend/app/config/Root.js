@@ -1,11 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Theme from '../components/Theme';
+import DefaultLayout from '../components/DefaultLayout';
+import Logo from '../components/Logo';
 
 const Root = () => {
   return (
     <Router>
-      <Route path="/" component={Theme} />
+      <Route path="/" render={() => <DefaultLayout component={<Logo />} />} />
     </Router>
   );
 };

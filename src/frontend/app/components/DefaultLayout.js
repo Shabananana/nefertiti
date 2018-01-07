@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import StackGrid from 'react-stack-grid';
 import EmblemPortrait from './EmblemPortrait';
+import Logo from './Logo';
 
 const fakeData = [];
 const fakeDataCount = 100;
@@ -10,29 +11,12 @@ for (let i = 0; i < fakeDataCount; i += 1) {
   fakeData.push(`Test ${i} Portrait Emblem`);
 }
 
-const Theme = () => {
+const DefaultLayout = () => {
   return (
-    <div>
+
+    <div className="defaultLayout">
       <header>
-        <div className="logo">
-          <div className="logo-shape">
-            <div className="top-triangles">
-              <div className="triangle-one" />
-              <div className="triangle-two" />
-              <div className="triangle-three" />
-            </div>
-            <div className="bottom-triangles">
-              <div className="triangle-four" />
-            </div>
-          </div>
-          <div className="logo-copy">
-            <span className="pale-yellow char1">N</span>
-            <span className="deep-pink char2">F</span>
-            <span className="lime-green char3">R</span>
-            <span className="dark-purple char4">T</span>
-            <span className="dark-orange char5">T</span>
-          </div>
-        </div>
+        <Logo />
         <nav className="navigation">
           <ul>
             <li>
@@ -56,7 +40,6 @@ const Theme = () => {
           <StackGrid
             columnWidth="20%"
             gutterWidth={10}
-            // gutterHeight={10}
           >
             {fakeData.map(data => (<EmblemPortrait
               content={data}
@@ -70,21 +53,22 @@ const Theme = () => {
       <footer>
         <ul>
           <li>
-            <Link to="/exampe1">Example1</Link>
+            <Link to="/example1">Example1</Link>
           </li>
           <li>
-            <Link to="/exampe2">Example1</Link>
+            <Link to="/example2">Example1</Link>
           </li>
           <li>
-            <Link to="/exampe3">Example1</Link>
+            <Link to="/example3">Example1</Link>
           </li>
           <li>
-            <Link to="/exampe4">Example1</Link>
+            <Link to="/example4">Example1</Link>
           </li>
         </ul>
       </footer>
     </div>
+
   );
 };
 
-export default Theme;
+export default DefaultLayout;
