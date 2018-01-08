@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import StackGrid from 'react-stack-grid';
 import EmblemPortrait from './EmblemPortrait';
 import Logo from './Logo';
@@ -11,7 +12,7 @@ for (let i = 0; i < fakeDataCount; i += 1) {
   fakeData.push(`Test ${i} Portrait Emblem`);
 }
 
-const DefaultLayout = () => {
+const DefaultLayout = ({ component: Component, ...rest }) => {
   return (
 
     <div className="defaultLayout">
@@ -37,6 +38,7 @@ const DefaultLayout = () => {
       <main className="main">
         <div className="content">
           <h1 className="headline">This is a headline</h1>
+          <Component {...rest} />
           <StackGrid
             columnWidth="20%"
             gutterWidth={10}
@@ -67,8 +69,11 @@ const DefaultLayout = () => {
         </ul>
       </footer>
     </div>
-
   );
+};
+
+DefaultLayout.propTypes = {
+  component: PropTypes.func.isRequired,
 };
 
 export default DefaultLayout;

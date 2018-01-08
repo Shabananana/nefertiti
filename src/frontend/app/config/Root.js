@@ -6,7 +6,7 @@ import Logo from '../components/Logo';
 const Root = () => {
   return (
     <Router>
-      <Route path="/" render={() => <DefaultLayout component={<Logo />} />} />
+      <Route path="/" render={() => <DefaultLayout component={Logo} />} />
     </Router>
   );
 };
